@@ -1,3 +1,80 @@
 #root {
   color: red;
 } 
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+select {
+  padding: 8px;
+  margin: 0 10px 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #155a9c;
+}
+
+#root {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.show, .episode {
+  background-color: white;
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.show img, .episode img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+h2, h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.clickable-show {
+  color: #1976d2;
+  cursor: pointer;
+}
+
+.clickable-show:hover {
+  text-decoration: underline;
+}
+
+#episode-count {
+  margin: 20px 0;
+  font-weight: bold;
+}
